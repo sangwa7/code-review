@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form" action="">
+    <label for="name" id="name-label">Name</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+    <label for="email" id="email-label">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+    <label for="number" id="number-label">Phone Number </label><br>
+    <input type="number" id="number" name="number-label" min="10" max="99" placeholder="10" required><br>
+    <label for="opt">Which option best describes your current role?</label><br>
+    <select name="opt" id="dropdown">
+      <option value="">Select current role</option>
+      <option value="fjob">Full Time Job</option>
+      <option value="flearner">Full Time Learner</option>
+    </select><br>
+    <label for="email-label">Would you recommend freeCodeCamp to a friend?</label><br>
+    
+    <table>
+      <tr>
+        <td>    
+ <input type="radio" name="recom" value="recom" checked></td> 
+   <td>    
+<label for="recom">Definitely</label><br>
+ </td> 
+   </tr>
+      <tr>
+        <td> <input type="radio" name="recom" value="recom">
+        </td>
+        <td>    <label for="recom">May be</label><br> </td>
+      </tr>
+      
+       <tr>
+        <td> <input type="radio" name="recom" value="recom">
+        </td>
+        <td>    <label for="recom">Not Sure</label><br> </td>
+      </tr>
+    </table>
+    </form>
+    </body>
+</html>
